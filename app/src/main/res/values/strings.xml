@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">SunsetTest</string>
+    <string name="app_name">Sunset Test</string>
+    <string name="error">Ocurrió un error</string>
+    <string name="title_activity_item_detail">Map</string>
 </resources>

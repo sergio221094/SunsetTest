@@ -5,9 +5,9 @@ xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 android:background="@color/Background"
-tools:context=".Views.MainActivity">
+tools:context=".Views.DetailStationsItem">
 
-    <LinearLayout
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -15,17 +15,18 @@ tools:context=".Views.MainActivity">
     android:background="@drawable/background_item">
 
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView_stations"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="2dp"
-            android:layout_alignParentTop="true">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_alignParentTop="true">
 
-        </androidx.recyclerview.widget.RecyclerView>
+    </androidx.recyclerview.widget.RecyclerView>
 
 
-    </LinearLayout>
+
+</LinearLayout>
 
     <RelativeLayout
         android:id="@+id/progress_bar"
