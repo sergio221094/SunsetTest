@@ -14,6 +14,13 @@ tools:context=".Views.ItemDetail">
     android:layout_margin="10dp"
     android:background="@drawable/background_item">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/detail"/>
 
     <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:map="http://schemas.android.com/apk/res-auto"
@@ -21,7 +28,7 @@ tools:context=".Views.ItemDetail">
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="350dp"
         android:layout_margin="10dp"
         tools:context=".Views.ItemDetail" />
     <LinearLayout
@@ -36,14 +43,15 @@ tools:context=".Views.ItemDetail">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre:"
+                android:text="@string/name"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/name_text_view"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Moravia"/>
+                android:textSize="16sp"/>
 
         </LinearLayout>
 
@@ -55,14 +63,35 @@ tools:context=".Views.ItemDetail">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Descripción"
+                android:text="@string/address"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/address_text_view"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/description_text_view"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Moravia"/>
+                android:textSize="16sp"/>
 
         </LinearLayout>
 
@@ -74,14 +103,16 @@ tools:context=".Views.ItemDetail">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Estado:"
+                android:text="@string/state"
+                android:textSize="16sp"
                 android:textStyle="bold"/>
             <TextView
                 android:id="@+id/state_text_view"
                 android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Moravia"/>
+                android:textSize="16sp"
+                android:text=""/>
 
         </LinearLayout>
 

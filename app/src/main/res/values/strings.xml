@@ -2,4 +2,12 @@
     <string name="app_name">Sunset Test</string>
     <string name="error">Ocurrió un error</string>
     <string name="title_activity_item_detail">Map</string>
+    <string name="stations">Estaciones:</string>
+    <string name="detail">Detalles:</string>
+    <string name="places">Lugares:</string>
+    <string name="name">Nombre:</string>
+    <string name="address">Dirección:</string>
+    <string name="description">Descripción:</string>
+    <string name="state">Estado:</string>
+    <string name="no_exist">Aún no registra</string>
 </resources>

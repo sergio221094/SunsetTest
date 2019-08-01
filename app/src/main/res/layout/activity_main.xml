@@ -15,6 +15,15 @@ tools:context=".Views.MainActivity">
     android:background="@drawable/background_item">
 
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/stations"/>
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView_stations"
             android:layout_width="match_parent"

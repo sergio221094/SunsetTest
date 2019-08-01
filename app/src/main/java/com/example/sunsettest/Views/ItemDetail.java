@@ -20,7 +20,7 @@ public class ItemDetail extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private Items items;
-    private TextView name, description, state;
+    private TextView name, description, state, address;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,8 @@ public class ItemDetail extends FragmentActivity implements OnMapReadyCallback {
         name = findViewById(R.id.name_text_view);
         description = findViewById(R.id.description_text_view);
         state = findViewById(R.id.state_text_view);
+        address = findViewById(R.id.address_text_view);
+
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -40,8 +42,25 @@ public class ItemDetail extends FragmentActivity implements OnMapReadyCallback {
 
         items  = extras.getParcelable(DetailStationsItem.ITEM_SELECTED);
         name.setText(items.getName());
-        description.setText(items.getDescription());
-        state.setText(items.getPlaces_state());
+
+        if (items.getDescription().length()<=0){
+            description.setText(getString(R.string.no_exist));
+        }else{
+            description.setText(items.getDescription());
+        }
+
+        if (items.getAddress().length()<=0){
+            address.setText(getString(R.string.no_exist));
+        }else{
+            address.setText(items.getAddress());
+        }
+
+        if (items.getPlaces_state().length()<=0 || items.getPlaces_state().equals("0")){
+            state.setText(getString(R.string.no_exist));
+        }else{
+            state.setText(items.getPlaces_state());
+        }
+
     }
 
 

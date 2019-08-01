@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sunset Test</string>
+    <string name="error">An error occurred </string>
+    <string name="title_activity_item_detail">Map</string>
+    <string name="stations">Stations: </string>
+    <string name="detail">Details: </string>
+    <string name="places">Places:</string>
+    <string name="name">Name:</string>
+    <string name="address">Address: </string>
+    <string name="description">Description: </string>
+    <string name="state">Status:</string>
+    <string name="no_exist">Not yet registered</string>
+</resources>
